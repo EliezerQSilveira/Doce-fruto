@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Doce-fruto</title>
+  </head>
+  <body>
+    <div class="circulo"></div>
+    <img class="logo" src="./assets/logo.png.png" alt="logo" />
+    <div class="conteudo">
+      <div class="texto">
+        <h2>
+          Isto não é apenas um açaí <br />
+          isto é <strong>Doce Fruto</strong>
+        </h2>
+        <p class="frase-impacto">
+            "Açaí tem em todo lugar. Mas o sabor que conquista de verdade, só na Doce Fruto."
+        </p>
+        <button>click e faça seu pedido</button>
+      </div>
+      <div class="caixa-starbucks">
+        <img class="acai-banana" src="./assets/banana2.png.png" alt="acai-banana" />
+      </div>
+    </div>
+
+    <footer class="caixa-copinho">
+      <img class="copinho" src="./assets/banana2.png.png" alt="acai-banana" onclick="trocaImagem('./assets/banana2.png.png');trocaCor('#ffe135')"/>
+      <img class="copinho" src="./assets/Kiwi3.png.png" alt="acai-kiwi" onclick="trocaImagem('./assets/Kiwi3.png.png');trocaCor('#a8c66c')"/>
+      <img class="copinho" src="./assets/morango1.png.png" alt="acai-morango" onclick="trocaImagem('./assets/morango1.png.png');trocaCor('#d72638')"/>
+    </footer>
+  </body>
+
+  <script>
+    let imagem = document.querySelector(".acai-banana")
+    let circulo= document.querySelector('.circulo')
+
+    function trocaImagem(endereco) {
+console.log(endereco)
+imagem.src = endereco
+    }
+function trocaCor(cor){
+    circulo.style.background=cor
+}
+
+  </script>
+</html>
